@@ -2,7 +2,7 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 $(function () {
-  var today = dayjs().format("MMM D, YYYY hh:mm");
+  var today = dayjs().format("MMM D, YYYY hh:mm A");
   $("#currentDay").text(today);
 
   // TODO: Add a listener for click events on the save button. This code should
@@ -34,10 +34,38 @@ $(function () {
   // attribute of each time-block be used to conditionally add or remove the
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
+function timeTracker(){
+  var timeNow = dayjs().format("hh:mm A");
+
+
+
+  $(".time-block").each(function(){
+    var idTime = parseInt($(this).attr("id"));
+
+    if (idTime < timeNow){
+      $(this).addClass("past");
+      $(this).removeClass("future");
+      $(this).removeClass("present");
+    }
+      else if
+      (idTime === timeNow){
+        $(this).addClass("present");
+        $(this).removeClass("future");
+        $(this).removeClass("past");
+      }
+      else{
+        $(this).addClass("future");
+        $(this).removeClass("past");
+        $(this).removeClass("present");
+      }
+      })
+    }
+timeTracker()
+      })
   //
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
   //
   // TODO: Add code to display the current date in the header of the page.
-});
+
