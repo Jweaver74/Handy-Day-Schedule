@@ -1,7 +1,7 @@
 # Handy Day Shcedule
 
 # Screen shot
-![Deployed Site](./images/screen%20shot.PNG)
+![Deployed Site](./images/updated%20screen%20shot.PNG)
 
 # Link to live site
 [Handy Day Schedule](https://jweaver74.github.io/Handy-Day-Schedule/)
