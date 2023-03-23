@@ -34,21 +34,24 @@ background-color: black;
 }
 
 .hour {
-  background-color: #ffffff;
+  background-color: white;
   color: #000000;
-  border-top: 1px dashed #000000;
+ 
 }
 
 .past {
-  background-color: grey;
+  background-color: grey ;
+  border: 2px solid black;
 }
 
 .present {
   background-color: orange;
+  border: 2px solid black;
 }
 
 .future {
   background-color: yellow;
+  border: 2px solid black;
 }
 
 .saveBtn {
