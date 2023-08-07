@@ -4,7 +4,7 @@
 ![Deployed Site](./images/updated%20screen%20shot.PNG)
 
 # Link to live site
-[Handy Day Schedule]()
+[Handy Day Schedule](https://jweaver74.github.io/Hetherington-Apiaries/ )
 
 ## Why I made this site
 The code was given to us to be able to demonstrate the skills of using API's along with DOM.
